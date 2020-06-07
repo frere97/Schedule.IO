@@ -1,0 +1,203 @@
+.date-label {
+    padding: 10px;
+    background-color: rgba(204, 204, 204, 0.185);
+}
+
+.date-label-checked {
+    background-color: rgba(204, 204, 204, 0.486);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+label {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.days>div {
+    display: inline;
+}
+
+.buttons input {
+    display: none;
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button span {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    background: #eeeeee;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    transition: ease .3s;
+}
+
+.button span:hover {
+    padding: 10px;
+}
+
+.buttons .turquesa .button span {
+    background: #1abc9c;
+}
+
+.buttons .cinza .button span {
+    background: #34495e;
+}
+
+.buttons .blue .button span {
+    background: #3498db;
+}
+
+.buttons .orange .button span {
+    background: #e67e22;
+}
+
+.buttons .concreto .button span {
+    background: #95a5a6;
+}
+
+.buttons .purple .button span {
+    background: #9b59b6;
+}
+
+.layer {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    /*transition: ease .3s;*/
+    z-index: -1;
+}
+
+.buttons .turquesa input:checked~.layer {
+    background: #1abc9c;
+}
+
+.buttons .cinza input:checked~.layer {
+    background: #34495e;
+}
+
+.buttons .blue input:checked~.layer {
+    background: #3498db;
+}
+
+.buttons .orange input:checked~.layer {
+    background: #e67e22;
+}
+
+.buttons .concreto input:checked~.layer {
+    background: #95a5a6;
+}
+
+.buttons .purple input:checked~.layer {
+    background: #9b59b6;
+}
+
+.buttons .turquesa,
+.buttons .cinza,
+.buttons .blue,
+.buttons .orange,
+.buttons .concreto,
+.buttons .purple {
+    background-color: transparent;
+}
+
+.radio-color:checked~.button span {
+    border: 4px solid black;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form label {
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+form a {
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    align-self: end;
+    transition: 400ms;
+}
+
+form button {
+    background: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms;
+}
+
+form button:hover {
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
+}
+
+.weekDays-selector input {
+    display: none!important;
+}
+
+.weekDays-selector input[type=checkbox]+label {
+    display: inline-block;
+    border-radius: 6px;
+    background: #dddddd;
+    height: 40px;
+    width: 30px;
+    margin-right: 3px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.weekDays-selector input[type=checkbox]:checked+label {
+    background: #2AD705;
+    color: #ffffff;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 50%;
+    }
+}

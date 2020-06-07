@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/timesheet.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/paginaPrincipal.css">
+    <link rel="stylesheet" href="css/modalExpandir.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Schedule.io</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="navbar-brand" href="#">
+            <img src="https://image.flaticon.com/icons/svg/2253/2253577.svg" alt="cacto" width="50" height="50">
+        </div>
+        <div id="menu-data">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="date" aria-label="dia de hoje" value="2020-05-27">
+            </form>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg=======<button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation"><svg class="bi bi-list" width="1em" height="1em"
+                    viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+        </button>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4">
+
+                <svg class="bi bi-person-fill" width="2em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+                <svg class="bi bi-star-fill" width="2em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg class="bi bi-question-circle-fill" width="2em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.57 6.033H5.25C5.22 4.147 6.68 3.5 8.006 3.5c1.397 0 2.673.73 2.673 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.355H7.117l-.007-.463c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.901 0-1.358.603-1.358 1.384zm1.251 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z" />
+                </svg>
+                <svg class="bi bi-x-circle-fill" width="2em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.146-3.146a.5.5 0 0 0-.708-.708L8 7.293 4.854 4.146a.5.5 0 1 0-.708.708L7.293 8l-3.147 3.146a.5.5 0 0 0 .708.708L8 8.707l3.146 3.147a.5.5 0 0 0 .708-.708L8.707 8l3.147-3.146z" />
+                </svg>
+                <!-- <h5 class="text-white h4">Collapsed content</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span> -->
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="timesheet" id="tabelaTimesheet">
+        <div class="painelSuperior">
+
+            <div class="diasDaSemana "> Domingo</div>
+            <div class="diasDaSemana "> Segunda</div>
+            <div class="diasDaSemana "> Terça</div>
+            <div class="diasDaSemana "> Quarta</div>
+            <div class="diasDaSemana "> Quinta</div>
+            <div class="diasDaSemana "> Sexta</div>
+            <div class="diasDaSemana "> Sábado</div>
+
+        </div>
+
+        <div class="linha l0">
+            <div class="coluna c0"></div>
+            <div class="coluna c1"></div>
+            <div class="coluna c2"></div>
+            <div class="coluna c3"></div>
+            <div class="coluna c4"></div>
+            <div class="coluna c5"></div>
+            <div class="coluna c6"></div>
+
+
+        </div>
+
+        <div class="linha l1">
+            <div class="coluna c0"></div>
+            <div class="coluna c1"></div>
+            <div class="coluna c2"></div>
+            <div class="coluna c3"></div>
+            <div class="coluna c4"></div>
+            <div class="coluna c5"></div>
+            <div class="coluna c6"></div>
+
+
+        </div>
+
+        <div class="linha l2">
+            <div class="coluna c0"></div>
+            <!--domingo -->
+            <div class="coluna c1"></div>
+            <!--segunda -->
+            <div class="coluna c2"></div>
+            <!--terça -->
+            <div class="coluna c3"></div>
+            <!--quarta -->
+            <div class="coluna c4"></div>
+            <!--quinta -->
+            <div class="coluna c5"></div>
+            <!--sexta -->
+            <div class="coluna c6"></div>
+            <!--sabado -->
+
+
+        </div>
+    </div>
+    <div class="nova-tarefa-container">
+        <button class="round-button" data-toggle="modal" data-target="#nova-tarefa">+</button>
+    </div>
+
+    <div class="modal" id="nova-tarefa" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adicionar Tarefa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+
+
+                        <form action="#" id="form-adicionar-tarefa">
+                            <label for="">Selecione a cor da tarefa</label>
+
+                            <div class="buttons">
+                                <label class="turquesa">
+                                    <input class="radio-color" type="radio" name="color" value="turquesa">
+                                    <div class="layer"></div>
+                                    <div class="button"><span></span></div>
+                                </label>
+
+                                <label class="blue">
+                                    <input class="radio-color" type="radio" name="color" value="blue">
+                                    <div class="layer"></div>
+                                    <div class="button"><span></span></div>
+                                </label>
+
+                                <label class="cinza">
+                                    <input class="radio-color" type="radio" name="color" value="cinza">
+                                    <div class="layer"></div>
+                                    <div class="button"><span></span></div>
+                                </label>
+
+                                <label class="orange">
+                                    <input class="radio-color" type="radio" name="color" value="orange">
+                                    <div class="layer"></div>
+                                    <div class="button"><span></span></div>
+                                </label>
+
+                                <label class="concreto">
+                                    <input class="radio-color" type="radio" name="color" value="concreto">
+                                    <div class="layer"></div>
+                                    <div class="button"><span></span></div>
+                                </label>
+
+                                <label class="purple">
+                                    <input class="radio-color" type="radio" name="color" value="purple">
+                                    <div class="layer"></div>
+                                    <div class="button"><span></span></div>
+                                </label>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="title">Título da Tarefa</label>
+                                <input type="text" name="title" maxlength="20">
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="category">Categoria</label>
+                                <input type="text" name="category">
+                            </div>
+                            <div class="input-wrapper">
+                                <div class="form-group">
+                                    <label class="control-label" for="WorkWeek">Início e fim da tarefa</label>
+                                    <input name="WorkWeek" class="form-control days-of-week" id="WorkWeek" type="text" data-bind="value: WorkWeek">
+                                </div>
+                                <div id="datepicker-error"></div>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="description">Digite uma descrição para essa tarefa</label>
+                                <textarea name="description" cols="30" rows="10"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="salvar-tarefa" class="btn btn-primary" data-dismiss="modal">Salvar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Tarefa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!--Nome-->
+                    <div class="item"> Nome: <span id="nome"></span></div>
+                    <!--Categoria-->
+                    <div class="item"> Categoria: <span id="categoria"></span></div>
+                    <!--Descricao-->
+                    <div class="item descricao"> Descrição: <span id="descrição"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <!--Botao deleta--><button type="button" class="btn btn-secondary " id="DeletaTarefa" data-dismiss="modal">Deletar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/timesheet.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/menuDate.js"></script>
+</body>
+
+</html>

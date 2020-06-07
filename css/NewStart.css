@@ -1,0 +1,92 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8e5e5;
+}
+
+.top {
+    color: #370617;
+    background-color: #bebdbd;
+    overflow: hidden;
+    padding: 1%;
+}
+
+.logo {
+    color: #370617;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 300%;
+    margin-bottom: 0px;
+}
+
+.logo .image {
+    width: 30%;
+    height: 30%;
+}
+
+.top .button {
+    float: right;
+    color: white;
+    size: 10%;
+    background-color: #969393;
+    border-radius: 45px;
+    border: none;
+    padding-top: .8%;
+    padding-bottom: .8%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 1.5rem;
+    margin-left: 1%;
+    text-align: center;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.body .button {
+    color: white;
+    size: 10%;
+    background-color: #969393;
+    border-radius: 45px;
+    border: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.5rem;
+    margin-left: 1%;
+    margin-top: 2vh;
+    text-align: center;
+    align-self: flex-end;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: #858383;
+}
+
+.body {
+    text-align: center;
+}
+
+.text {
+    float: left;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+@media (max-width: 500px) {
+    .top {
+        text-align: center;
+    }
+    .text {
+        font-size: 2em;
+    }
+    .top .button {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) {
+    .body .button {
+        display: none;
+    }
+}
